@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.MainActivityInfo">
+
+    <TextView
+        android:id="@+id/purBoxTopInfo"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Information"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/josefin_slab_bold"
+        android:text="Informasi"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/purBoxTopInfo"
+        app:layout_constraintEnd_toEndOf="@id/purBoxTopInfo"
+        app:layout_constraintStart_toEndOf="@id/backButtonInfo"
+        app:layout_constraintTop_toTopOf="@id/purBoxTopInfo" />
+
+    <Button
+        android:id="@+id/backButtonInfo"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        android:onClick="backButton"
+        app:icon="@drawable/back"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/purBoxTopInfo"
+        app:layout_constraintEnd_toEndOf="@id/purBoxTopInfo"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/purBoxTopInfo"
+        app:layout_constraintTop_toTopOf="@id/purBoxTopInfo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/InfoContain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:justificationMode="inter_word"
+        android:text="Informasi:
+        \n\nHalaman ini digunakan untuk membantu anda (pengepul) mencatat hasil transaksi yang anda lakukan melalui fitur-fitur yang kami berikan, fitur-fitur tersebut antara lain:
+        \n\n1. Jual Ikan\nFitur ini untuk mencatat hasil penjualan anda dengan tampilan yang interaktif dan mudah untuk dipahami. Harga ikan yang akan anda jual dapat diubah sesuai kemauan anda di navigasi &quot;ikan&quot;.
+        \n\n2. Beli Ikan\nFitur ini  untuk mencatat hasil pembelian anda dengan tampilan yang interaktif dan mudah untuk dipahami. Harga ikan yang akan anda beli harus sesuai dengan harga standar nasional saat ini.
+        \n\n3. Riwayat Jual\nFitur ini berisi riwayat transaksi penjualan yang telah anda lakukan.
+        \n\n4. Riwayat Beli\nFitur ini berisi riwayat transaksi pembelian  yang telah anda lakukan."
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purBoxTopInfo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

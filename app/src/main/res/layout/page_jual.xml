@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/purBoxTopJual"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/purBoxBotJual"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/backButtonJual"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        app:icon="@drawable/back"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/purBoxTopJual"
+        app:layout_constraintEnd_toEndOf="@id/purBoxTopJual"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/purBoxTopJual"
+        app:layout_constraintTop_toTopOf="@id/purBoxTopJual"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="backButton"/>
+
+    <TextView
+        android:id="@+id/Penjualan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/josefin_slab_bold"
+        android:text="Penjualan"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/purBoxTopJual"
+        app:layout_constraintEnd_toEndOf="@id/purBoxTopJual"
+        app:layout_constraintStart_toEndOf="@+id/backButtonJual"
+        app:layout_constraintTop_toTopOf="@id/purBoxTopJual" />
+
+    <ListView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@color/purple_200"
+        android:dividerHeight="5dp"
+        app:layout_constraintBottom_toTopOf="@id/purBoxBotJual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/purBoxTopJual" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:buttonTint="@color/white"
+        android:checked="false"
+        android:fontFamily="@font/josefin_slab_bold"
+        android:text="Semua"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/purBoxBotJual"
+        app:layout_constraintEnd_toEndOf="@id/purBoxBotJual"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/purBoxBotJual"
+        app:layout_constraintTop_toTopOf="@+id/purBoxBotJual" />
+
+    <Button
+        android:id="@+id/checkoutJual"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/josefin_slab_bold"
+        android:text="Checkout"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/purBoxBotJual"
+        app:layout_constraintEnd_toEndOf="@id/purBoxBotJual"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/purBoxBotJual"
+        app:layout_constraintTop_toTopOf="@id/purBoxBotJual" />
+
+    <TextView
+        android:id="@+id/checkoutBGJual"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="@id/checkoutJual"
+        app:layout_constraintEnd_toEndOf="@id/checkoutJual"
+        app:layout_constraintStart_toStartOf="@id/checkoutJual"
+        app:layout_constraintTop_toTopOf="@id/checkoutJual" />
+
+    <TextView
+        android:id="@+id/totalJual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/josefin_slab_bold"
+        android:text="Total"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/purBoxBotJual"
+        app:layout_constraintEnd_toStartOf="@id/checkoutJual"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/purBoxBotJual"
+        app:layout_constraintTop_toTopOf="@id/purBoxBotJual"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/totalAmountJual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/josefin_slab_bold"
+        android:text="Rp. 10.000"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/purBoxBotJual"
+        app:layout_constraintEnd_toStartOf="@id/checkoutJual"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/checkBox2"
+        app:layout_constraintTop_toTopOf="@id/purBoxBotJual" />
+</androidx.constraintlayout.widget.ConstraintLayout>

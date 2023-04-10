@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "417793395716",
+    "project_id": "iwaks-16d14",
+    "storage_bucket": "iwaks-16d14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417793395716:android:0547d084bc6a39a630f951",
+        "android_client_info": {
+          "package_name": "com.wam.iwaksbukucatatanpengepulikan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417793395716-nav6m3lck3cedkma6thajv1koc6qjlhh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wam.iwaksbukucatatanpengepulikan",
+            "certificate_hash": "4fb3cc0ed1b164902020040a383469e64be8004c"
+          }
+        },
+        {
+          "client_id": "417793395716-lo6v9jqiarqsc4bppv0ld40oet899ptt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0mKM0vdUvPd-eTjOu8rXOG54dzLVb0Jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417793395716-lo6v9jqiarqsc4bppv0ld40oet899ptt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

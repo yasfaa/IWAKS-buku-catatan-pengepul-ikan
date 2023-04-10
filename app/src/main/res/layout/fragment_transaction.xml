@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTintMode="add"
+    tools:context=".ui.Fragments.TransactionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/JualButton"
+        android:layout_width="250dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginBottom="205dp"
+        android:background="@drawable/rounded_corner20dp"
+        android:clickable="false"
+        android:onClick="openPageJual"
+        android:text="Jual Ikan"
+        android:textSize="20sp"
+        app:icon="@drawable/sell"
+        app:iconSize="100dp" />
+
+    <Button
+        android:id="@+id/beliButton"
+        android:layout_width="250dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/rounded_corner20dp"
+        android:onClick="openPageBeli"
+        android:text="beli\nIkan"
+        android:textSize="20sp"
+        app:icon="@drawable/buy"
+        app:iconSize="100dp" />
+
+    <Button
+        android:id="@+id/riwayatJualButton"
+        android:layout_width="250dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/rounded_corner20dp"
+        android:onClick="openPageJualRiwayat"
+        android:text="Riwayat Jual"
+        android:textSize="20sp"
+        app:icon="@drawable/sellhstory"
+        app:iconSize="100dp" />
+
+    <Button
+        android:id="@+id/riwayatBeliButton"
+        android:layout_width="250dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginTop="275dp"
+        android:background="@drawable/rounded_corner20dp"
+        android:onClick="openPageBeliRiwayat"
+        android:text="Riwayat Beli"
+        android:textSize="20sp"
+        app:icon="@drawable/buyhist"
+        app:iconSize="100dp" />
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"
+        android:background="#00FFFFFF"
+        android:text="i"
+        android:textAllCaps="false"
+        android:textSize="34sp"
+        app:iconGravity="textTop"
+        app:iconSize="40dp"
+        android:onClick="openPageInfo"/>
+
+    <TextView
+        android:id="@+id/purBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/purple" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="230dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="70dp"
+        android:fontFamily="@font/josefin_slab_bold"
+        android:gravity="center_vertical"
+        android:onClick="openPageUser"
+        android:text="Username"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:onClick="openPageUser"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:src="@tools:sample/avatars" />
+
+</FrameLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/konstrain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/PurBoxTop"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/purBoxBot"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/backButtonBeli"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        app:icon="@drawable/back"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/PurBoxTop"
+        app:layout_constraintEnd_toEndOf="@+id/PurBoxTop"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/PurBoxTop"
+        app:layout_constraintTop_toTopOf="@id/PurBoxTop"
+        tools:ignore="ExtraText,SpeakableTextPresentCheck"
+        android:onClick="backButton"/>
+
+
+
+    <TextView
+        android:id="@+id/Pembelian"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="Pembelian"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/PurBoxTop"
+        app:layout_constraintEnd_toEndOf="@id/PurBoxTop"
+        app:layout_constraintStart_toEndOf="@+id/backButtonBeli"
+        app:layout_constraintTop_toTopOf="@id/PurBoxTop" />
+
+    <ListView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@color/purple_200"
+        android:dividerHeight="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/purBoxBot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PurBoxTop" />
+
+    <Button
+        android:id="@+id/CheckoutBeli"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/josefin_slab_bold"
+        android:text="Checkout"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/purBoxBot"
+        app:layout_constraintEnd_toEndOf="@+id/purBoxBot"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/purBoxBot"
+        app:layout_constraintTop_toTopOf="@+id/purBoxBot" />
+
+    <TextView
+        android:id="@+id/CheckoutBG"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="@id/CheckoutBeli"
+        app:layout_constraintEnd_toEndOf="@id/CheckoutBeli"
+        app:layout_constraintStart_toStartOf="@+id/CheckoutBeli"
+        app:layout_constraintTop_toTopOf="@+id/CheckoutBeli" />
+
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/josefin_slab_bold"
+        android:text="Total"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/purBoxBot"
+        app:layout_constraintEnd_toStartOf="@+id/CheckoutBeli"
+        app:layout_constraintTop_toTopOf="@+id/purBoxBot"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/josefin_slab_bold"
+        android:text="Rp. 10.000"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/CheckoutBeli"
+        app:layout_constraintTop_toTopOf="@+id/purBoxBot" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_beli"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        tools:listitem="@layout/item_row_keranjang_iwak"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
